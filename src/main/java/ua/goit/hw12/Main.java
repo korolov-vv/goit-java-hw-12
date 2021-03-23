@@ -12,9 +12,9 @@ public class Main {
     }
 
     public void makeWater() {
-        int i = 1;
+        int phase = 0;
 
-        for (; i < INPUUT.length() / 3; i++) {
+        for (; phase < INPUUT.length() / 3; phase++) {
             new Hydrogen(PHASER);
             new Hydrogen(PHASER);
             new Oxygen(PHASER);
@@ -29,7 +29,6 @@ public class Main {
             this.phaser = phaser;
             start();
         }
-
         @Override
         public void run() {
             System.out.print("O");
